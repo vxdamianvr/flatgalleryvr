@@ -1,15 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
+
+    <!--
+        Spatial Gallery Trio (bento_trio) Adaptive Foreground
+        Safe zone (28..80 in 108dp viewport) with wide 5dp-6dp #18181B gutters:
+        1. Left Tall Portrait Frame (Emerald #34D399 / #10B981 / #6EE7B7) - X: 28..51, Y: 28..80 (23x52)
+        2. Top-Right Wide Landscape Frame (Sky Blue #60A5FA / #3B82F6 / #93C5FD) - X: 56..80, Y: 28..48 (24x20)
+        3. Bottom-Right 1:1 Square Frame (Soft Purple #A78BFA / #8B5CF6 / #C4B5FD) - X: 56..80, Y: 54..78 (24x24)
+    -->
+
+    <!-- 1. PORTRAIT FRAME (Left: X=28..51, Y=28..80) -->
+    <!-- Outer luminous rim (#6EE7B7) -->
     <path
-        android:fillColor="#3DDC84"
-        android:pathData="M31,64.3c-1.3,0 -2.4,-1.1 -2.4,-2.4V46.1c0,-1.3 1.1,-2.4 2.4,-2.4h46c1.3,0 2.4,1.1 2.4,2.4v15.8c0,1.3 -1.1,2.4 -2.4,2.4H31z"/>
+        android:fillColor="#6EE7B7"
+        android:pathData="M33,28 L46,28 A5,5 0 0,1 51,33 L51,75 A5,5 0 0,1 46,80 L33,80 A5,5 0 0,1 28,75 L28,33 A5,5 0 0,1 33,28 Z" />
+    <!-- Main Emerald body (#34D399) -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M40,50m-3,0a3,3 0 1,0 6,0a3,3 0 1,0 -6,0"/>
+        android:fillColor="#34D399"
+        android:pathData="M33.5,30 L45.5,30 A3.5,3.5 0 0,1 49,33.5 L49,74.5 A3.5,3.5 0 0,1 45.5,78 L33.5,78 A3.5,3.5 0 0,1 30,74.5 L30,33.5 A3.5,3.5 0 0,1 33.5,30 Z" />
+    <!-- Inner deep Emerald photo mat (#10B981) -->
     <path
-        android:fillColor="#FFFFFF"
-        android:pathData="M34,60l9,-11l7,9l9,-12l15,14z"/>
+        android:fillColor="#10B981"
+        android:pathData="M35,33 L44,33 A2,2 0 0,1 46,35 L46,73 A2,2 0 0,1 44,75 L35,75 A2,2 0 0,1 33,73 L33,35 A2,2 0 0,1 35,33 Z" />
+    <!-- Crisp inner highlight card (#D1FAE5) -->
+    <path
+        android:fillColor="#D1FAE5"
+        android:pathData="M36.5,36 L42.5,36 A1.5,1.5 0 0,1 44,37.5 L44,49.5 A1.5,1.5 0 0,1 42.5,51 L36.5,51 A1.5,1.5 0 0,1 35,49.5 L35,37.5 A1.5,1.5 0 0,1 36.5,36 Z" />
+
+    <!-- 2. LANDSCAPE FRAME (Top-Right: X=56..80, Y=28..48) -->
+    <!-- Outer luminous rim (#93C5FD) -->
+    <path
+        android:fillColor="#93C5FD"
+        android:pathData="M61,28 L75,28 A5,5 0 0,1 80,33 L80,43 A5,5 0 0,1 75,48 L61,48 A5,5 0 0,1 56,43 L56,33 A5,5 0 0,1 61,28 Z" />
+    <!-- Main Sky Blue body (#60A5FA) -->
+    <path
+        android:fillColor="#60A5FA"
+        android:pathData="M61.5,30 L74.5,30 A3.5,3.5 0 0,1 78,33.5 L78,42.5 A3.5,3.5 0 0,1 74.5,46 L61.5,46 A3.5,3.5 0 0,1 58,42.5 L58,33.5 A3.5,3.5 0 0,1 61.5,30 Z" />
+    <!-- Inner deep Blue photo mat (#2563EB) -->
+    <path
+        android:fillColor="#2563EB"
+        android:pathData="M63,33 L73,33 A2,2 0 0,1 75,35 L75,41 A2,2 0 0,1 73,43 L63,43 A2,2 0 0,1 61,41 L61,35 A2,2 0 0,1 63,33 Z" />
+    <!-- Crisp inner highlight card (#DBEAFE) -->
+    <path
+        android:fillColor="#DBEAFE"
+        android:pathData="M64,35 L68,35 A1,1 0 0,1 69,36 L69,39 A1,1 0 0,1 68,40 L64,40 A1,1 0 0,1 63,39 L63,36 A1,1 0 0,1 64,35 Z" />
+
+    <!-- 3. SQUARE FRAME (Bottom-Right: X=56..80, Y=54..78) -->
+    <!-- Outer luminous rim (#C4B5FD) -->
+    <path
+        android:fillColor="#C4B5FD"
+        android:pathData="M61,54 L75,54 A5,5 0 0,1 80,59 L80,73 A5,5 0 0,1 75,78 L61,78 A5,5 0 0,1 56,73 L56,59 A5,5 0 0,1 61,54 Z" />
+    <!-- Main Soft Purple body (#A78BFA) -->
+    <path
+        android:fillColor="#A78BFA"
+        android:pathData="M61.5,56 L74.5,56 A3.5,3.5 0 0,1 78,59.5 L78,72.5 A3.5,3.5 0 0,1 74.5,76 L61.5,76 A3.5,3.5 0 0,1 58,72.5 L58,59.5 A3.5,3.5 0 0,1 61.5,56 Z" />
+    <!-- Inner deep Purple photo mat (#7C3AED) -->
+    <path
+        android:fillColor="#7C3AED"
+        android:pathData="M63,59 L73,59 A2,2 0 0,1 75,61 L75,71 A2,2 0 0,1 73,73 L63,73 A2,2 0 0,1 61,71 L61,61 A2,2 0 0,1 63,59 Z" />
+    <!-- Crisp inner highlight card (#EDE9FE) -->
+    <path
+        android:fillColor="#EDE9FE"
+        android:pathData="M64.5,61.5 L69.5,61.5 A1,1 0 0,1 70.5,62.5 L70.5,67.5 A1,1 0 0,1 69.5,68.5 L64.5,68.5 A1,1 0 0,1 63.5,67.5 L63.5,62.5 A1,1 0 0,1 64.5,61.5 Z" />
+
 </vector>
